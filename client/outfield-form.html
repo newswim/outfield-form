@@ -1,0 +1,59 @@
+<head>
+  <title>outfield-form</title>
+</head>
+
+<template name="main">
+
+<div class="container">
+  		<h1>Outfield Customer Rescue</h1>
+
+  {{> form}}
+<br />
+<br />
+	{{> customerTable}}
+
+</div>
+
+</template>
+
+<template name="form">
+
+{{> quickForm collection="Customers" id="addCustomer" type="insert"}}
+
+
+</template>
+
+
+<template name="customerTable">
+
+<div class="table-responsive">
+	<table class="table table-hover">
+	<tbody>
+		<tr>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Company</td>
+			<td>Start</td>
+			<td>End</td>
+			<td>Type</td>
+
+		</tr>
+
+	{{#each customer}}
+
+		<tr>
+			<td>{{first}}</td>
+			<td>{{last}}</td>
+			<td>{{company}}</td>
+			<td>{{prettifyDate startDate}}</td>
+			<td>{{prettifyDate endDate}}</td>
+			<td>{{type}}</td>
+
+		</tr>
+
+	{{/each}}
+	</tbody>
+	</table>
+</div>
+
+</template>
