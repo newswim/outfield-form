@@ -6,3 +6,5 @@
 
 - [ ] Edit/update fields
 - [ ] Remove fields
+- [ ] Add logo
+- [ ] Mobile view
