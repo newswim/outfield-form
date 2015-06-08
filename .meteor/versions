@@ -45,9 +45,11 @@ momentjs:moment@2.8.4
 mongo@1.1.0
 mongo-livedata@1.0.8
 mrt:moment@2.8.1
+natestrauser:x-editable-bootstrap@1.5.2_2
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 raix:eventemitter@0.1.2
+raix:handlebar-helpers@0.2.4
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5

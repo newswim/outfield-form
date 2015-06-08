@@ -49,7 +49,16 @@
 			<td>{{prettifyDate startDate}}</td>
 			<td>{{prettifyDate endDate}}</td>
 			<td>{{type}}</td>
-			<td><button data-action="remove">x</button></td>
+			<td><button data-action="remove" class="btn btn-danger">x</button>
+					<button data-action="edit" class="btn btn-warning editCustomer">edit</button>
+			</td>
+
+		<!--		TODO: wire fields to update with x-editable and jQuery -->
+		
+		{{#if $.Session.get "editingCustomer"}}
+					<button data-action="save" class="btn btn-success">Save</button>
+		{{/if}}
+	
 
 		</tr>
 
