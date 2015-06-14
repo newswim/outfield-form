@@ -13,6 +13,5 @@ iron:router
 mrt:moment
 twbs:bootstrap
 matb33:collection-hooks
-natestrauser:x-editable-bootstrap
 raix:handlebar-helpers
 msavin:jetsetter
